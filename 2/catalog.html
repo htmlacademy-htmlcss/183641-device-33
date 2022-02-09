@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/183641-device-33/2/">
 </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img class="header-logo" src="index.html" alt="Логотип Интернет-магазина электронных товаров «device».">
+        <img class="header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип Интернет-магазина электронных товаров «device».">
+        <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <input type="search" placeholder="Текст поиска">
+          <button class="">Найти</button>
+        </form>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Текст поиска</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Найти</a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
           <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Выйти</span>
+                <span class="visually-hidden">
+                  Выйти
+                </span>
               </a>
             </li>
           <li class="navigation-item">
@@ -33,16 +34,16 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">каталог товаров</a>
+            <a class="navigation-link link" href="catalog.html">каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">доставка</a>
+            <a class="navigation-link link" href="#">доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">гарантия</a>
+            <a class="navigation-link link" href="#">гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">контакты</a>
+            <a class="navigation-link link" href="#">контакты</a>
           </li>
         </ul>
       </nav>
@@ -148,28 +149,28 @@
         <ul class="product-card">
           <li>
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" width="360" height="380" src="images/catalog/amateur-selfie-stick.jpg" alt="селфи-палка с закреплённым на ней телефоном.">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
             <b>500 ₽</b>
           </li>
           <li>
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" width="360" height="380" src="images/catalog/professional-selfie-stick.jpg" alt="качественно сделанная селфи-палка в сложенном состоянии.">
               <h3 class="product-card-title">Професиональная селфи-палка</h3>
             </a>
             <b>1 500 ₽</b>
           </li>
           <li>
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" width="360" height="380" src="images/catalog/unsinkable-selfie-stick.jpg" alt="жёлтая, водонепроницаемая селфи-палка.">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
             </a>
             <b>2 500 ₽</b>
           </li>
           <li>
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" width="360" height="380" src="images/catalog/follow-me-selfie-stick.jpg" alt="пластиковая человеческая рука с вмонтированным в неё держателем для телефона.">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b>1 500 ₽</b>
@@ -205,33 +206,39 @@
     <footer class="page-footer">
       <section class="footer-address">
         <h2 class="visually-hidden">Адрес</h2>
-        <img class="footer-address-logo" src="" alt="Логотип Интернет-магазина электронных товаров «device».">
+        <img class="footer-address-logo" src="images/logo-footer.svg" width="144.9" height="36" alt="Логотип Интернет-магазина электронных товаров «device».">
         <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П</p>
         <!-- Здесь должен быть псевдоэлемент - жёлтая полоска -->
       </section>
 
       <section class="footer-services-social">
         <h2 class="visually-hidden">Услуги и социальные сети</h2>
-        <ul>
-          <li class="footer-services-item">доставка</li>
-          <li class="footer-services-item">гарантия</li>
-          <li class="footer-services-item">контакты</li>
+        <ul class="footer-services-list">
+          <li class="footer-services-item">
+            <a class="footer-services-link" href="#">доставка</a>
+          </li>
+          <li class="footer-services-item">
+            <a class="footer-services-link" href="#">гарантия</a>
+          </li>
+          <li class="footer-services-item">
+            <a class="footer-services-link" href="#">контакты</a>
+          </li>
         </ul>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
+              <a class="button" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
+              <a class="button" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Твитер</span>
-            </a>
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твитер</span>
+              </a>
           </li>
         </ul>
       </section>
@@ -239,9 +246,7 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-
-        <!-- Непонятный элемент то ли изображение-ссылка, то ли текст-ссылка-->
-        <img class="footer-contacts-logo" src="" alt="Логотип">
+        <img class="footer-contacts-logo" src="images/html-academy.svg" width="114.9" height="32.9" alt="Логотип html-academy">
       </section>
     </footer>
   </body>
