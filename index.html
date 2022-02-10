@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+
   </head>
 
   <body>
@@ -55,56 +56,36 @@
 
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
-        <img class="slider-image" src="pictures/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер с четыремя винтами и лазерным прицелом.">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <div class="slider-container">
+          <img class="slider-image" src="pictures/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер с четыремя винтами и лазерным прицелом.">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
 
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-        </ol>
-
-        <div class="products-wrapper">
+        <div class="products-container">
+          <h3 class="products-title">Порхает как бабочка, жалит как пчела!</h3>
+          <p class="text products-description">Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="link products-link" href="#">
+              <span class="poducts-more-detalied">подробнее</span>
+          </a>
           <ul class="products-list">
-            <li class="products-item">
-              <h3 class="products-title">Порхает как бабочка, жалит как пчела!</h3>
-            </li>
-            <li class="products-item">
-              <p class="text products-description">Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            </li>
-            <li class="products-item">
-              <a class="link products-link" href="#">
-                <span class="poducts-more-detalied">подробнее</span>
-              </a>
-            </li>
             <li class="products-item">
               <span class="products-parameters">800 м</span>
             </li>
             <li class="products-item">
+              <span class="products-specifications">Дальность полета</span>
+            </li>
+          </ul>
+          <ul class="products-list">
+            <li class="products-item">
               <span class="products-parameters">50 м</span>
             </li>
             <li class="products-item">
-                <span class="products-specifications">Дальность полета</span>
-            </li>
-            <li class="products-item">
-                <span class="products-specifications">Радиус поражения</span>
+              <span class="products-specifications">Радиус поражения</span>
             </li>
           </ul>
         </div>
@@ -114,27 +95,27 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
           <li class="categories-item">
-            <img class="categories-photo" src="pictures/catalog/3D-glasses.png" width="96.95" height="54.99" alt="Очки виртуальной реальности.">
+            <img class="categories-photo" src="pictures/catalog/3D-glasses.png" width="97" height="55" alt="Очки виртуальной реальности.">
             <h3 class="categories-title">Виртуальная реальность</h3>
           </li>
           <li class="categories-item">
-            <img class="categories-photo" src="pictures/catalog/monopod.png" width="85.87" height="117" alt="Монопод для селфи.">
+            <img class="categories-photo" src="pictures/catalog/monopod.png" width="86" height="117" alt="Монопод для селфи.">
             <h3 class="categories-title">Моноподы для селфи</h3>
           </li>
           <li class="categories-item">
-              <img class="categories-photo" src="pictures/catalog/camcorder.png" width="71.02" height="87" alt="Экшн-камера.">
+              <img class="categories-photo" src="pictures/catalog/camcorder.png" width="71" height="87" alt="Экшн-камера.">
               <h3 class="categories-title">Экшн-камеры</h3>
           </li>
           <li class="categories-item">
-            <img class="categories-photo" src="pictures/catalog/fitness-bracelet.png" width="107.31" height="64.99" alt="Фитнес-браслет.">
+            <img class="categories-photo" src="pictures/catalog/fitness-bracelet.png" width="107" height="65" alt="Фитнес-браслет.">
             <h3 class="categories-title">Фитнес-браслеты</h3>
           </li>
           <li class="categories-item">
-            <img class="categories-photo" src="pictures/catalog/smart-watch.png" width="56.01" height="97.98" alt="Смарт-часы.">
+            <img class="categories-photo" src="pictures/catalog/smart-watch.png" width="56" height="98" alt="Смарт-часы.">
             <h3 class="categories-title">Умные часы</h3>
           </li>
           <li class="categories-item">
-            <img class="categories-photo" src="pictures/catalog/quadrocopters.png" width="132.03" height="69.01" alt="Квадрокоптер.">
+            <img class="categories-photo" src="pictures/catalog/quadrocopters.png" width="132" height="69" alt="Квадрокоптер.">
             <h3 class="categories-title">Квадрокоптеры</h3>
           </li>
         </ul>
@@ -173,7 +154,7 @@
         <!-- Здесь тоже псевдоэлемент -->
       </section>
 
-      <setion class="about-us">
+      <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
         <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p class="text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями: </p>
@@ -183,7 +164,7 @@
           <li class="transport-company-item">ТоксБерри</li>
         </ul>
         <a class="link" href="#">подробнее о нас</a>
-      </setion>
+      </section>
 
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
@@ -216,7 +197,7 @@
     <footer class="page-footer">
       <section class="footer-address">
         <h2 class="visually-hidden">Адрес</h2>
-        <img class="footer-address-logo" src="images/logo-footer.svg" width="144.9" height="36" alt="Логотип Интернет-магазина электронных товаров «device».">
+        <img class="footer-address-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазина электронных товаров «device».">
         <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П</p>
         <!-- Здесь должен быть псевдоэлемент - жёлтая полоска -->
       </section>
@@ -256,7 +237,7 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        <img class="footer-contacts-logo" src="images/html-academy.svg" width="114.9" height="32.9" alt="Логотип html-academy">
+        <img class="footer-contacts-logo" src="images/html-academy.svg" width="115" height="33" alt="Логотип html-academy">
       </section>
     </footer>
   </body>
