@@ -12,10 +12,10 @@
         <img class="header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип Интернет-магазина электронных товаров «device».">
         <div class="navigation-inner">
           <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input type="search" placeholder="Текст поиска">
-            <button class="">Найти</button>
+            <input class="input" type="search" placeholder="Текст поиска">
+            <button class="search">Найти</button>
           </form>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Войти</a>
             </li>
@@ -36,7 +36,12 @@
           <li class="nav-item">
             <a class="navigation-link link" href="catalog.html">каталог товаров</a>
           </li>
-          <li class="nav-item">
+          <li class="navigation-item">
+            <a class="navigation-link link" href="catalog.html">
+              <!-- <img class="plus-icon"> -->
+            </a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link link" href="#">доставка</a>
           </li>
           <li class="nav-item">
@@ -46,7 +51,9 @@
             <a class="navigation-link link" href="#">контакты</a>
           </li>
         </ul>
-        <p class="page-header-text">01</p>
+        <div class="page-header-inner">
+          <p class="page-header-text">01</p>
+        </div>
       </nav>
     </header>
 
@@ -56,21 +63,27 @@
       <section class="products container">
         <h2 class="visually-hidden">Товары</h2>
         <div class="slider-inner">
-          <img class="slider-image" src="pictures/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер с четыремя винтами и лазерным прицелом.">
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
+          <img class="slider-image" src="pictures/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер с четыремя винтами и лазерным прицелом.">
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
         </div>
-
         <div class="products-inner">
           <h3 class="products-title">Порхает как бабочка, жалит как пчела!</h3>
           <p class="text products-description">Этот обычный на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="link products-link" href="#">
-            <span class="poducts-more-detalied">подробнее</span>
-          </a>
+          <ul class="products-list indicators-list">
+            <li class="products-item">
+              <a class="link products-link" href="#">
+                <span class="poducts-more-detalied">подробнее</span>
+              </a>
+            </li>
+            <li class="products-item">
+              <img class="indicators" src="images/indicators.svg" alt="иконка">
+            </li>
+          </ul>
           <div class="parameters-inner">
           <ul class="products-list">
             <li class="products-item">
@@ -152,13 +165,14 @@
             <h3 class="advantages-title">Доставка</h3>
             <p class=" text advantages-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
+          <img class="postman" src="images/postman.svg" width="136" height="164" alt="изображение курьера">
         </div>
       </section>
 
       <section class="exclusive-offer container">
-        <!-- Здесь будет псевдоэлемент - картинка -->
+        <span class="truck-icon"></span>
         <h2 class="exclusive-title">доставим редкий товар под заказ</h2>
-        <!-- Здесь тоже псевдоэлемент -->
+        <span class="information-icon"></span>
       </section>
 
       <div class="container about-us-contacts-wrapper">
@@ -199,8 +213,8 @@
           </div>
           <div class="subscribe-form-inner">
             <form class="subscribe-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" placeholder="Ваш e-mail">
-              <button class="button">подписаться</button>
+              <input class="field-email" type="email" placeholder="Ваш e-mail">
+              <button class="button-subscribe button">подписаться</button>
             </form>
             <!-- Здесь должен быть псевдоэлемент зелёная галочка -->
             <span class="text subscribe-newsletter-ps">Это бесплатно</span>
@@ -215,7 +229,6 @@
           <h2 class="visually-hidden">Адрес</h2>
           <img class="footer-address-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазина электронных товаров «device».">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П</p>
-          <!-- Здесь должен быть псевдоэлемент - жёлтая полоска -->
         </section>
 
         <section class="footer-services-social">
@@ -252,7 +265,7 @@
 
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <a class="footer-contacts-phone" href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
           <img class="footer-contacts-logo" src="images/html-academy.svg" width="115" height="33" alt="Логотип html-academy">
         </section>
       </div>
