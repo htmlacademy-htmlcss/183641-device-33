@@ -36,15 +36,12 @@
           <li class="nav-item">
             <a class="navigation-link link" href="catalog.html">каталог товаров</a>
           </li>
-          <li class="navigation-item">
+          <li class="nav-item">
             <a class="navigation-link link" href="catalog.html">
-              <img class="plus-icon">
+              <img class="plus-icon" src="images/plus-icon.svg" width="50" height="50" alt="иконка-плюсик">
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link link" href="#">доставка</a>
-          </li>
-          <li class="navigation-item">
+          <li class="nav-item">
             <a class="navigation-link link" href="#">доставка</a>
           </li>
           <li class="nav-item">
@@ -153,29 +150,23 @@
       <section class="advantages">
         <div class="advantages-inner container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <button class="link advantages-button">доставка</button>
-            </li>
-            <li class="advantages-item">
-              <button class="link advantages-button">гарантия</button>
-            </li>
-            <li class="advantages-item">
-              <button class="link advantages-button">кредит</button>
-            </li>
-          </ul>
-          <div class="advantages-wrapper">
+          <div class="button-container">
+            <button class="link advantages-button line">доставка</button>
+            <button class="link advantages-button">гарантия</button>
+            <button class="link advantages-button">кредит</button>
+          </div>
+          <div class="advantages-container">
             <h3 class="advantages-title">Доставка</h3>
             <p class=" text advantages-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img class="postman" src="images/postman.svg" width="136" height="164">
           </div>
-          <img class="postman" src="images/postman.svg" width="136" height="164">
         </div>
       </section>
 
       <section class="exclusive-offer container">
-        <span class="truck-icon"></span>
+        <span class="truck-icon truck-icon-images"></span>
         <h2 class="exclusive-title">доставим редкий товар под заказ</h2>
-        <span class="information-icon"></span>
+        <a class="information-icon information-icon-images" href="#"></a>
       </section>
 
       <div class="container about-us-contacts-wrapper">
@@ -219,7 +210,6 @@
               <input class="field-email" type="email" placeholder="Ваш e-mail">
               <button class="button-subscribe button">подписаться</button>
             </form>
-            <!-- Здесь должен быть псевдоэлемент зелёная галочка -->
             <span class="text subscribe-newsletter-ps">Это бесплатно</span>
           </div>
         </div>
@@ -249,17 +239,17 @@
           </ul>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy">
+              <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.instagram.com/htmlacademy/">
+              <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru">
+              <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твитер</span>
               </a>
             </li>
